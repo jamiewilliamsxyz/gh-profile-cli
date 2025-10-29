@@ -3,7 +3,7 @@ import {Box} from 'ink';
 import TextInput from 'ink-text-input';
 
 interface Props {
-	onSubmit: () => void;
+	onSubmit: (query: string) => void;
 }
 
 const SearchInput = ({onSubmit}: Props) => {
