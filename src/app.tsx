@@ -1,10 +1,10 @@
 import React from 'react';
-import {Text, Box} from 'ink';
+import {Text} from 'ink';
 
 export default function App() {
 	return (
-		<Box>
-			<Text>Welcome</Text>
-		</Box>
+		<Text>
+			Welcome to <Text color="#A7C7E7">Github Profile CLI</Text>
+		</Text>
 	);
 }
