@@ -1,12 +1,9 @@
 import React from 'react';
 import {Text} from 'ink';
+import {GithubProfile} from '../types.js';
 
-interface Props {
-	profileData: string;
-}
-
-const ResultsDisplay = ({profileData}: Props) => {
-	return <Text>{profileData}</Text>;
+const ResultsDisplay = ({profileData}: {profileData: GithubProfile}) => {
+	return <Text>{JSON.stringify(profileData, null, 2)}</Text>;
 };
 
 export default ResultsDisplay;

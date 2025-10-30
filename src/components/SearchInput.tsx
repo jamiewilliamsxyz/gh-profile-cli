@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import {Box} from 'ink';
 import TextInput from 'ink-text-input';
+import type {QueryType} from '../types.js';
 
 interface Props {
-	onSubmit: (query: string) => void;
+	onSubmit: (query: QueryType) => void;
 }
 
 const SearchInput = ({onSubmit}: Props) => {
